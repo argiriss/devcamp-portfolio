@@ -9,15 +9,15 @@ module ApplicationHelper
     end
   end
 
-  def source_helper(layout_name)
+  def source_helper(styles)
     if session[:source]
-      greeting = "Thanks for visiting me from #{session[:source]} and you are on the #{layout_name} layout"
-      content_tag(:p, greeting, class: "source-greeting")
+      greeting = "Thanks for visiting me from #{session[:source]}, please feel free to #{ link_to 'contact me', contact_path } if you'd like to work together."
+      content_tag(:div, greeting.html_safe, class: styles)
     end
   end
 
   def copyright_generator
-    DevcampViewTool::Renderer.copyright 'Ar An', 'All rights reserved'
+    DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
   end
 
   def nav_items
@@ -64,7 +64,7 @@ module ApplicationHelper
   end
 
   def alerts
-    alert = ( flash[:alert] || flash[:error] || flash[:notice])
+    alert = (flash[:alert] || flash[:error] || flash[:notice])
 
     if alert
       alert_generator alert
@@ -72,7 +72,7 @@ module ApplicationHelper
   end
 
   def alert_generator msg
-    js add_gritter(msg, title: "Ar An Portfolio", sticky: false)
+    js add_gritter(msg, title: "Jordan Hudgens Portfolio", sticky: false)
   end
 
 end
