@@ -5,7 +5,7 @@ ruby '2.6.3'
 
 gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
-gem "puma", ">= 3.12.2"
+gem "puma", "4.3.3"
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -30,7 +30,7 @@ gem 'friendly_id', '~> 5.2.4'
 gem "devise", ">= 4.7.1"
 gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
-gem "nokogiri", ">= 1.10.4"
+gem "nokogiri", ">= 1.10.8"
 gem "loofah", ">= 2.3.1"
 gem "rack", ">= 2.0.8"
 gem 'devcamp_view_tool', '~> 0.1.0'
@@ -48,3 +48,4 @@ gem 'twitter', '~> 6.2'
 gem 'redis', '~> 4.1', '>= 4.1.3'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
+gem "rake", "~> 13.0.1"
