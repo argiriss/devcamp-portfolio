@@ -3,9 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
-gem 'rails', '~> 5.2.3'
+gem 'rails', '>= 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
-gem "puma", "4.3.3"
+gem "puma", "4.3.5"
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -25,7 +25,6 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
 gem "devise", ">= 4.7.1"
 gem 'bootstrap', '~> 4.3.1'
@@ -36,7 +35,7 @@ gem "rack", ">= 2.0.8"
 gem 'devcamp_view_tool', '~> 0.1.0'
 gem 'petergate', '~> 2.0', '>= 2.0.1'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
-gem 'kaminari', '~> 1.1', '>= 1.1.1'
+gem 'kaminari', '~> 1.1', '>= 1.2.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem 'carrierwave', '~> 2.0', '>= 2.0.2'
 gem 'mini_magick', '~> 4.9', '>= 4.9.5'
@@ -49,3 +48,8 @@ gem 'redis', '~> 4.1', '>= 4.1.3'
 gem 'redcarpet', '~> 3.5'
 gem 'coderay', '~> 1.1', '>= 1.1.2'
 gem "rake", "~> 13.0.1"
+
+gem "actionview", ">= 5.2.4.2"
+gem "activestorage", ">= 5.2.4.3"
+gem "actionpack", ">= 5.2.4.3"
+gem "activesupport", ">= 5.2.4.3"
